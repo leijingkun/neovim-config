@@ -7,4 +7,6 @@ require("keymap")
 require("plugin")
 -- 主题加载
 vim.cmd[[colorscheme tokyonight]]
+-- lsp配置
+require("lsp")
 

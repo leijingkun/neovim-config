@@ -9,6 +9,8 @@ local M = {
 		"saadparwaiz1/cmp_luasnip",
 		"L3MON4D3/LuaSnip",
 	},
+
+
 }
 
 M.config = function()
@@ -16,6 +18,9 @@ M.config = function()
 	vim.opt.completeopt = { "menu", "menuone", "noselect" }
 
 	cmp.setup({
+        experimental = {
+            ghost_text = true,
+        },
 		snippet = {
 			expand = function(args)
 				require("luasnip").lsp_expand(args.body) -- For `luasnip` users.

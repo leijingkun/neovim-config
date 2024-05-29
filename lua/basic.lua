@@ -1,9 +1,12 @@
 -- 设置编码
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = "UTF-8"
-
 -- 联通系统剪切板
 vim.o.clipboard = "unnamed"
+-- 设置内置终端
+vim.o.shell = "pwsh.exe"
+vim.o.shellcmdflag= '-nologo -noprofile -ExecutionPolicy RemoteSigned -command'
+vim.o.shellxquote= ''
 -- 缩进=4
 vim.o.tabstop = 4
 vim.bo.tabstop = 4
@@ -24,3 +27,6 @@ vim.o.undofile = false
 
 -- 设置行号
 vim.wo.number = true
+-- 设置leader键为空格
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
